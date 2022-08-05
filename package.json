@@ -1,26 +1,28 @@
 {
-  "name": "vscode-angular-ts",
-  "displayName": "vscode-angular-ts",
-  "description": "vscode-angular-ts syntax highlighting ported to angular-inline templates",
-  "version": "0.0.2",
-  "engines": {
-    "vscode": "^1.41.0"
-  },
+  "name": "vscode-angular-inline",
+  "displayName": "vscode-angular-inline",
+  "description": "vscode-angular-html syntax highlighting ported to angular inline templates",
+  "version": "0.0.1",
+  "publisher": "ghaschel",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ghaschel/vscode-angular-ts.git"
+    "url": "https://github.com/ghaschel/vscode-angular-inline.git"
   },
   "bugs": {
-    "url": "https://github.com/ghaschel/vscode-angular-ts/issues"
+    "url": "https://github.com/ghaschel/vscode-angular-inline/issues"
   },
-  "categories": [
-    "Programming Languages"
-  ],
   "scripts": {
     "watch": "gulp watch",
     "compile-json": "gulp compile-json",
     "publish": "standard-version && git push --follow-tags origin master && vsce publish"
   },
+  "engines": {
+    "vscode": "^1.41.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
   "contributes": {
     "grammars": [
       {
@@ -41,7 +43,7 @@
     "color": "#1e1e1e",
     "theme": "dark"
   },
-  "icon": "assets/angular-ts.png",
+  "icon": "assets/angular-inline.png",
   "devDependencies": {
     "@commitlint/cli": "^16.2.4",
     "@commitlint/config-conventional": "^16.2.4",
