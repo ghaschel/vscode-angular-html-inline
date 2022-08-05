@@ -1,0 +1,5 @@
+.gitignore
+src/**
+test/**
+gulpfile.js
+travis.yml
