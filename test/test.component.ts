@@ -1,8 +1,9 @@
-import { Component } from '@angular/core'
+// SYNTAX TEST "inline-template.ng"
+import { Component } from '@angular/core';
 
 @Component({
-  selector: "vscode-angular-inline",
-  styleUrls: ["./vscode-angular-inline.scss"],
+  selector: 'vscode-angular-inline',
+  styleUrls: ['./vscode-angular-inline.scss'],
   template: `
 
     DOCTYPE
