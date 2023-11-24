@@ -13,13 +13,19 @@
     "url": "https://github.com/ghaschel/vscode-angular-inline/issues"
   },
   "scripts": {
-    "watch": "gulp watch",
-    "compile-json": "gulp compile-json",
+    "clean": "rimraf syntaxes/*",
+    "vscode:prepublish": "npm run clean && npm run compile",
+    "compile": "npm run clean && npm run compile:grammar:prod",
+    "watch": "npm run compile && gulp watch",
+    "compile:grammar:dev": "gulp compile:grammar && gulp copy",
+    "compile:grammar:prod": "gulp compile:grammar",
     "publish": "standard-version && git push --follow-tags origin master && vsce publish",
-    "postinstall": "node scripts/postinstall.js",
-    "prepare": "husky install",
-    "test": "npx vscode-tmgrammar-test -g syntaxes/inline-template.ng.json -g test/externalGrammars/source.stylus.tmLanguage.json -g test/externalGrammars/source.css.scss.tmLanguage.json -g test/externalGrammars/source.ts.tmLanguage.json -g test/externalGrammars/source.sassdoc.tmLanguage.json -g test/externalGrammars/source.css.tmLanguage.json -g test/externalGrammars/source.css.less.tmLanguage.json test/*.ts",
-    "update-snapshots": "npx vscode-tmgrammar-snap -s inline-template.ng -g syntaxes/inline-template.ng.json -g test/externalGrammars/source.stylus.tmLanguage.json -g test/externalGrammars/source.css.scss.tmLanguage.json -g test/externalGrammars/source.ts.tmLanguage.json -g test/externalGrammars/source.sassdoc.tmLanguage.json -g test/externalGrammars/source.css.tmLanguage.json -g test/externalGrammars/source.css.less.tmLanguage.json --updateSnapshot test/test.component.ts"
+    "postinstall": "node -e \"process.env.NODE_ENV != 'production' && process.exit(1)\" || npm run postinstall:dev",
+    "postinstall:dev": "node scripts/postinstall.js",
+    "prepare": "node -e \"process.env.NODE_ENV != 'production' && process.exit(1)\" || npm run prepare:dev",
+    "prepare:dev": "husky install",
+    "test": "npx vscode-tmgrammar-test -g syntaxes/inline-template.ng.json -g test/externalGrammars/source.stylus.tmLanguage.json -g test/externalGrammars/source.css.scss.tmLanguage.json -g test/externalGrammars/source.ts.tmLanguage.json -g test/externalGrammars/source.sassdoc.tmLanguage.json -g test/externalGrammars/source.css.tmLanguage.json -g test/externalGrammars/source.css.less.tmLanguage.json -g test/externalGrammars/html-template.ng.tmLanguage.json -g test/externalGrammars/source.js.tmLanguage.json -g test/externalGrammars/source.coffee.tmLanguage.json -g test/externalGrammars/source.dart.tmLanguage.json -g test/externalGrammars/source.sass.tmLanguage.json -g test/externalGrammars/source.js.regexp.tmLanguage.plist -g test/externalGrammars/source.postcss.tmLanguage.plist test/test.component.ts",
+    "update-snapshots": "npx vscode-tmgrammar-snap -s inline-template.ng -g syntaxes/inline-template.ng.json -g test/externalGrammars/source.stylus.tmLanguage.json -g test/externalGrammars/source.css.scss.tmLanguage.json -g test/externalGrammars/source.ts.tmLanguage.json -g test/externalGrammars/source.sassdoc.tmLanguage.json -g test/externalGrammars/source.css.tmLanguage.json -g test/externalGrammars/source.css.less.tmLanguage.json -g test/externalGrammars/html-template.ng.tmLanguage.json -g test/externalGrammars/source.js.tmLanguage.json -g test/externalGrammars/source.coffee.tmLanguage.json -g test/externalGrammars/source.dart.tmLanguage.json -g test/externalGrammars/source.sass.tmLanguage.json -g test/externalGrammars/source.js.regexp.tmLanguage.plist -g test/externalGrammars/source.postcss.tmLanguage.plist --updateSnapshot test/test.component.ts"
   },
   "engines": {
     "vscode": "^1.41.0"
@@ -36,9 +42,7 @@
           "source.ts"
         ],
         "embeddedLanguages": {
-          "text.html": "html",
-          "source.css": "css",
-          "source.js": "javascript"
+          "html-template.ng": "html"
         }
       }
     ]
@@ -47,22 +51,28 @@
     "color": "#1e1e1e",
     "theme": "dark"
   },
+  "extensionDependencies": [
+    "ghaschel.vscode-angular-html"
+  ],
   "icon": "assets/angular-inline.png",
   "devDependencies": {
-    "@commitlint/cli": "^17.0.3",
-    "@commitlint/config-conventional": "^17.0.3",
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
     "cz-conventional-changelog": "^3.3.0",
+    "glob": "^10.3.10",
     "gulp": "^4.0.2",
-    "gulp-json-editor": "^2.5.6",
+    "gulp-json-editor": "^2.5.7",
     "gulp-json5-to-json": "^0.2.1",
     "gulp-merge-json": "^2.1.2",
     "gulp-prettier": "^4.0.0",
-    "husky": "^7.0.0",
+    "husky": "^8.0.3",
     "json-beautify": "^1.1.1",
-    "prettier": "^2.7.1",
+    "mocha": "^10.2.0",
+    "prettier": "^3.1.0",
     "pretty-quick": "^3.1.3",
+    "rimraf": "^5.0.5",
     "standard-version": "^9.5.0",
-    "vscode-tmgrammar-test": "^0.1.1"
+    "vscode-tmgrammar-test": "^0.1.2"
   },
   "config": {
     "commitizen": {

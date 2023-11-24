@@ -6,3 +6,5 @@ node_modules
 .hushlogin
 test/externalGrammars/*.json
 test/externalGrammars/*.plist
+.history/*
+!test/externalGrammars/source.postcss.tmLanguage.plist

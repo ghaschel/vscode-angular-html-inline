@@ -9,13 +9,13 @@ const prettierConfig = require('./.prettierrc.json');
 const scopes = package.contributes.grammars.map(scope => scope.scopeName);
 
 function watch() {
-  return gulp.watch('./src/**/*.json5', gulp.series(['compile-json']));
+  return gulp.watch('./src/grammar/**/*.json5', gulp.series(['compile:grammar']));
 }
 
-gulp.task('compile', async done => {
+gulp.task('compile', done => {
   scopes.forEach(scope => {
     gulp
-      .src('./src/**/*.json5')
+      .src('./src/grammar/**/*.json5')
       .pipe(
         merge({
           fileName: `${scope}.json`,
@@ -39,26 +39,25 @@ gulp.task('compile', async done => {
   done();
 });
 
-gulp.task('copy', async done => {
+gulp.task('copy', done => {
   scopes.forEach(scope => {
     gulp
       .src(`./syntaxes/${scope}.json`)
-      .pipe(gulp.dest(`${homedir}/.vscode/extensions/ghaschel.vscode-angular-ts-${package.version}/syntaxes`));
+      .pipe(gulp.dest(`${homedir}/.vscode/extensions/ghaschel.vscode-angular-html-${package.version}/syntaxes`));
   });
 
   gulp
+    .src(['./out/**/*'])
+    .pipe(gulp.dest(`${homedir}/.vscode/extensions/ghaschel.vscode-angular-html-${package.version}/out`));
+
+  gulp
     .src(`./package.json`)
-    .pipe(gulp.dest(`${homedir}/.vscode/extensions/ghaschel.vscode-angular-ts-${package.version}`));
+    .pipe(gulp.dest(`${homedir}/.vscode/extensions/ghaschel.vscode-angular-html-${package.version}`));
 
   done();
 });
 
-gulp.task('compile-json', gulp.series(['compile', 'copy']));
-
-gulp.task('watch', () => {
-  return watch();
-});
-
-gulp.task('default', () => {
-  return watch();
-});
+gulp.task('copy', gulp.series(['copy']));
+gulp.task('compile:grammar', gulp.series(['compile']));
+gulp.task('watch', () => watch());
+gulp.task('default', () => watch());

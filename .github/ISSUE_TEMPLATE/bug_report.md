@@ -14,7 +14,7 @@ Please provide the maximum amount of information in order for me to be able to f
 
 **List of installed/enabled extensions**
 Provide a list of installed/enabled extensions. Also, try to pinpoint which extension might be conflicting with the current one if that's the case.
- - Provide an extension list screenshot of extensions ids [e.g. `ghaschel.vscode-angular-html`]
+ - Provide an extension list screenshot of extensions ids [e.g. `ghaschel.vscode-angular-html-inline`]
 
 **OS (please provide the following information):**
  - OS and Version: [e.g. Windows 10/11, Ubuntu 18.04, MacOS Catalina]
