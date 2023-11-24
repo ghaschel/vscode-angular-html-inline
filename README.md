@@ -4,8 +4,8 @@
 [![GitHub issues](https://img.shields.io/github/issues/ghaschel/vscode-angular-html-inline.svg)](https://github.com/ghaschel/vscode-angular-html-inline/issues)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ghaschel/vscode-angular-html-inline/blob/master/LICENSE)
 [![Build status](https://travis-ci.org/ghaschel/vscode-angular-html-inline.svg?branch=master)](https://travis-ci.org/ghaschel/vscode-angular-html-inline.svg?branch=master)
-[![Installs](https://vsmarketplacebadge.apphb.com/installs-short/ghaschel.vscode-angular-html-inline.svg?style=flat&color=blue)](https://marketplace.visualstudio.com/items?itemName=ghaschel.vscode-angular-html-inline)
-[![Version](https://vsmarketplacebadge.apphb.com/version-short/ghaschel.vscode-angular-html-inline.svg?style=flat&color=blue)](https://marketplace.visualstudio.com/items?itemName=ghaschel.vscode-angular-html-inline) [![Greenkeeper badge](https://badges.greenkeeper.io/ghaschel/vscode-angular-html-inline.svg)](https://greenkeeper.io/)
+[![Installs](https://vsmarketplacebadge.apphb.com/installs-short/ghaschel.vscode-angular-inline.svg?style=flat&color=blue)](https://marketplace.visualstudio.com/items?itemName=ghaschel.vscode-angular-inline)
+[![Version](https://vsmarketplacebadge.apphb.com/version-short/ghaschel.vscode-angular-inline.svg?style=flat&color=blue)](https://marketplace.visualstudio.com/items?itemName=ghaschel.vscode-angular-inline) [![Greenkeeper badge](https://badges.greenkeeper.io/ghaschel/vscode-angular-inline.svg)](https://greenkeeper.io/)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 <div align="center">
