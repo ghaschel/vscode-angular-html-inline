@@ -117,7 +117,7 @@ This plugin adds syntax highlighting for angular HTML template files in VS Code.
 
 ## Doctype
 
-<img src="assets/doctype.png" title="vscode-angular-html" alt="Doctype" />
+<img src="assets/doctype.png" title="vscode-angular-html" alt="Doctype"/>
 
 ## Comments
 
