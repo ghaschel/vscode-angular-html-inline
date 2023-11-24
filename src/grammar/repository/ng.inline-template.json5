@@ -1,0 +1,20 @@
+{
+  repository: {
+    'ng.inline-template': {
+      begin: '\\G\\s*([`|\'|"])',
+      beginCaptures: {
+        '1': {
+          name: 'string',
+        },
+      },
+      end: '\\1',
+      endCaptures: {
+        '0': {
+          name: 'string',
+        },
+      },
+      contentName: 'punctuation.separator.comma.ts html-template.ng',
+      patterns: [{ include: 'html-template.ng' }],
+    },
+  },
+}
