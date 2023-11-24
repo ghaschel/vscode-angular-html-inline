@@ -1,15 +1,15 @@
-# vscode-angular-inline
+# vscode-angular-html-inline
 
-[![SemVer](https://img.shields.io/github/tag/ghaschel/vscode-angular-inline.svg)](https://img.shields.io/github/tag/ghaschel/vscode-angular-inline.svg)
-[![GitHub issues](https://img.shields.io/github/issues/ghaschel/vscode-angular-inline.svg)](https://github.com/ghaschel/vscode-angular-inline/issues)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ghaschel/vscode-angular-inline/blob/master/LICENSE)
-[![Build status](https://travis-ci.org/ghaschel/vscode-angular-inline.svg?branch=master)](https://travis-ci.org/ghaschel/vscode-angular-inline.svg?branch=master)
-[![Installs](https://vsmarketplacebadge.apphb.com/installs-short/ghaschel.vscode-angular-inline.svg?style=flat&color=blue)](https://marketplace.visualstudio.com/items?itemName=ghaschel.vscode-angular-inline)
-[![Version](https://vsmarketplacebadge.apphb.com/version-short/ghaschel.vscode-angular-inline.svg?style=flat&color=blue)](https://marketplace.visualstudio.com/items?itemName=ghaschel.vscode-angular-inline) [![Greenkeeper badge](https://badges.greenkeeper.io/ghaschel/vscode-angular-inline.svg)](https://greenkeeper.io/)
+[![SemVer](https://img.shields.io/github/tag/ghaschel/vscode-angular-html-inline.svg)](https://img.shields.io/github/tag/ghaschel/vscode-angular-html-inline.svg)
+[![GitHub issues](https://img.shields.io/github/issues/ghaschel/vscode-angular-html-inline.svg)](https://github.com/ghaschel/vscode-angular-html-inline/issues)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ghaschel/vscode-angular-html-inline/blob/master/LICENSE)
+[![Build status](https://travis-ci.org/ghaschel/vscode-angular-html-inline.svg?branch=master)](https://travis-ci.org/ghaschel/vscode-angular-html-inline.svg?branch=master)
+[![Installs](https://vsmarketplacebadge.apphb.com/installs-short/ghaschel.vscode-angular-html-inline.svg?style=flat&color=blue)](https://marketplace.visualstudio.com/items?itemName=ghaschel.vscode-angular-html-inline)
+[![Version](https://vsmarketplacebadge.apphb.com/version-short/ghaschel.vscode-angular-html-inline.svg?style=flat&color=blue)](https://marketplace.visualstudio.com/items?itemName=ghaschel.vscode-angular-html-inline) [![Greenkeeper badge](https://badges.greenkeeper.io/ghaschel/vscode-angular-html-inline.svg)](https://greenkeeper.io/)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 <div align="center">
-    <img src="https://raw.githubusercontent.com/ghaschel/vscode-angular-inline/master/assets/angular-inline.png" title="vscode-angular-inline" alt="Logo" />
+    <img src="https://raw.githubusercontent.com/ghaschel/vscode-angular-html-inline/master/assets/angular-inline.png" title="vscode-angular-html-inline" alt="Logo" />
 </div>
 
 > Note: No theme will have the highlighting displayed in these images. For that effect, run the `vscode-angular-html: Set legacy color customizations` command from the command pallete and you're good to go.
@@ -22,7 +22,7 @@ This plugin adds syntax highlighting for angular HTML template files in VS Code.
 
 # Summary
 
-- [vscode-angular-inline](#vscode-angular-inline)
+- [vscode-angular-html-inline](#vscode-angular-html-inline)
   - [Angular HTML Template Inline Syntax Highlighting](#angular-html-template-inline-syntax-highlighting)
 - [Summary](#summary)
 - [General](#general)

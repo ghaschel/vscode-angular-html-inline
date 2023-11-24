@@ -1,16 +1,16 @@
 {
-  "name": "vscode-angular-inline",
-  "displayName": "vscode-angular-inline",
+  "name": "vscode-angular-html-inline",
+  "displayName": "vscode-angular-html-inline",
   "description": "vscode-angular-html syntax highlighting ported to angular inline templates",
   "version": "0.0.1",
   "publisher": "ghaschel",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ghaschel/vscode-angular-inline.git"
+    "url": "https://github.com/ghaschel/vscode-angular-html-inline.git"
   },
   "bugs": {
-    "url": "https://github.com/ghaschel/vscode-angular-inline/issues"
+    "url": "https://github.com/ghaschel/vscode-angular-html-inline/issues"
   },
   "scripts": {
     "clean": "rimraf syntaxes/*",
