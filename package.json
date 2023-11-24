@@ -2,7 +2,7 @@
   "name": "vscode-angular-inline",
   "displayName": "vscode-angular-html-inline",
   "description": "vscode-angular-html syntax highlighting ported to angular inline templates",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "publisher": "ghaschel",
   "license": "MIT",
   "repository": {
