@@ -3,10 +3,10 @@
 [![SemVer](https://img.shields.io/github/tag/ghaschel/vscode-angular-html-inline.svg)](https://img.shields.io/github/tag/ghaschel/vscode-angular-html-inline.svg)
 [![GitHub issues](https://img.shields.io/github/issues/ghaschel/vscode-angular-html-inline.svg)](https://github.com/ghaschel/vscode-angular-html-inline/issues)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ghaschel/vscode-angular-html-inline/blob/master/LICENSE)
-[![Build status](https://travis-ci.org/ghaschel/vscode-angular-html-inline.svg?branch=master)](https://travis-ci.org/ghaschel/vscode-angular-html-inline.svg?branch=master)
+[![NodeJS with Gulp](https://github.com/ghaschel/vscode-angular-html-inline/actions/workflows/npm-gulp.yml/badge.svg?event=push)](https://github.com/ghaschel/vscode-angular-html-inline/actions/workflows/npm-gulp.yml)
 [![Downloads](https://vsmarketplacebadges.dev/downloads-short/ghaschel.vscode-angular-inline.png)](https://marketplace.visualstudio.com/items?itemName=ghaschel.vscode-angular-inline)
-[![Installs](https://vsmarketplacebadges.dev/downloads-short/ghaschel.vscode-angular-inline.png)](https://marketplace.visualstudio.com/items?itemName=ghaschel.vscode-angular-inline)
-[![Version](https://vsmarketplacebadges.dev/downloads-short/ghaschel.vscode-angular-inline.png)](https://marketplace.visualstudio.com/items?itemName=ghaschel.vscode-angular-inline)
+[![Installs](https://vsmarketplacebadges.dev/installs-short/ghaschel.vscode-angular-inline.png)](https://marketplace.visualstudio.com/items?itemName=ghaschel.vscode-angular-inline)
+[![Version](https://vsmarketplacebadges.dev/version-short/ghaschel.vscode-angular-inline.png)](https://marketplace.visualstudio.com/items?itemName=ghaschel.vscode-angular-inline)
 [![Known Vulnerabilities](https://snyk.io/test/github/ghaschel/vscode-angular-html-inline/badge.svg)](https://snyk.io/test/github/ghaschel/vscode-angular-html-inline)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
